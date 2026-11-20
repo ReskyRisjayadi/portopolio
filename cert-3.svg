@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="500" height="350">
+  <defs>
+    <linearGradient id="certBg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <linearGradient id="redBorder3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="50%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="350" rx="12" fill="url(#certBg3)"/>
+  <rect x="12" y="12" width="476" height="326" rx="8" fill="none" stroke="url(#redBorder3)" stroke-width="4"/>
+  <rect x="20" y="20" width="460" height="310" rx="6" fill="none" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <circle cx="250" cy="70" r="30" fill="#0f172a"/>
+  <circle cx="250" cy="70" r="26" fill="none" stroke="#38bdf8" stroke-width="2"/>
+  <text x="250" y="78" fill="#38bdf8" font-size="18" font-weight="bold" font-family="sans-serif" text-anchor="middle">BNSP</text>
+
+  <text x="250" y="125" fill="#64748b" font-size="11" font-weight="600" letter-spacing="3" font-family="sans-serif" text-anchor="middle">SERTIFIKASI KOMPETENSI KERJA NASIONAL</text>
+  <text x="250" y="152" fill="#0f172a" font-size="18" font-weight="bold" font-family="sans-serif" text-anchor="middle">Rekayasa Perangkat Lunak (Lead Developer)</text>
+  <text x="250" y="174" fill="#2563eb" font-size="12" font-weight="600" font-family="sans-serif" text-anchor="middle">Atas Nama: Arif Pratama</text>
+
+  <text x="250" y="210" fill="#475569" font-size="11" font-family="sans-serif" text-anchor="middle">Telah dinyatakan KOMPETEN pada skema sertifikasi kualifikasi nasional bidang</text>
+  <text x="250" y="228" fill="#475569" font-size="11" font-family="sans-serif" text-anchor="middle">pemrograman perangkat lunak dan arsitektur sistem berbasis standar SKKNI.</text>
+
+  <line x1="80" y1="285" x2="190" y2="285" stroke="#94a3b8" stroke-width="1"/>
+  <text x="135" y="302" fill="#64748b" font-size="9" font-family="sans-serif" text-anchor="middle">Badan Nasional Sertifikasi Profesi</text>
+
+  <circle cx="250" cy="285" r="22" fill="#0284c7" opacity="0.15"/>
+  <circle cx="250" cy="285" r="18" fill="none" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="250" y="289" fill="#0284c7" font-size="8" font-weight="bold" font-family="sans-serif" text-anchor="middle">KOMPETEN</text>
+
+  <line x1="310" y1="285" x2="420" y2="285" stroke="#94a3b8" stroke-width="1"/>
+  <text x="365" y="302" fill="#64748b" font-size="9" font-family="sans-serif" text-anchor="middle">No. Reg: BNSP-TIK-2023-7721</text>
+</svg>

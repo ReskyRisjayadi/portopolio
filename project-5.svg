@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="600" height="380">
+  <defs>
+    <linearGradient id="p5bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#021226"/>
+      <stop offset="100%" stop-color="#0d294d"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" rx="16" fill="url(#p5bg)"/>
+  
+  <rect x="0" y="0" width="600" height="40" fill="#08182b"/>
+  <circle cx="25" cy="20" r="5" fill="#ef4444"/>
+  <circle cx="42" cy="20" r="5" fill="#f59e0b"/>
+  <circle cx="59" cy="20" r="5" fill="#10b981"/>
+  <text x="85" y="24" fill="#38bdf8" font-size="12" font-weight="bold" font-family="sans-serif">⚡ IoT Telemetry Stream • Live Node 142/142 Online</text>
+
+  <!-- Gauge / Ring 1 -->
+  <rect x="30" y="60" width="165" height="150" rx="12" fill="#0d213b" stroke="#1e3a8a" stroke-width="1"/>
+  <text x="112" y="85" fill="#94a3b8" font-size="11" font-family="sans-serif" text-anchor="middle">Suhu Ruang Server</text>
+  <circle cx="112" cy="135" r="40" fill="none" stroke="#1e293b" stroke-width="8"/>
+  <circle cx="112" cy="135" r="40" fill="none" stroke="#0ea5e9" stroke-width="8" stroke-dasharray="190 70"/>
+  <text x="112" y="140" fill="#ffffff" font-size="16" font-weight="bold" font-family="sans-serif" text-anchor="middle">21.8°C</text>
+  <text x="112" y="195" fill="#10b981" font-size="10" font-family="sans-serif" text-anchor="middle">● Kondisi Optimal</text>
+
+  <!-- Gauge / Ring 2 -->
+  <rect x="215" y="60" width="165" height="150" rx="12" fill="#0d213b" stroke="#1e3a8a" stroke-width="1"/>
+  <text x="297" y="85" fill="#94a3b8" font-size="11" font-family="sans-serif" text-anchor="middle">Beban Daya (kWh)</text>
+  <circle cx="297" cy="135" r="40" fill="none" stroke="#1e293b" stroke-width="8"/>
+  <circle cx="297" cy="135" r="40" fill="none" stroke="#f59e0b" stroke-width="8" stroke-dasharray="140 120"/>
+  <text x="297" y="140" fill="#ffffff" font-size="16" font-weight="bold" font-family="sans-serif" text-anchor="middle">4.2 kW</text>
+  <text x="297" y="195" fill="#38bdf8" font-size="10" font-family="sans-serif" text-anchor="middle">Efisiensi 94%</text>
+
+  <!-- Gauge / Ring 3 -->
+  <rect x="400" y="60" width="165" height="150" rx="12" fill="#0d213b" stroke="#1e3a8a" stroke-width="1"/>
+  <text x="482" y="85" fill="#94a3b8" font-size="11" font-family="sans-serif" text-anchor="middle">Latency Jaringan</text>
+  <circle cx="482" cy="135" r="40" fill="none" stroke="#1e293b" stroke-width="8"/>
+  <circle cx="482" cy="135" r="40" fill="none" stroke="#10b981" stroke-width="8" stroke-dasharray="210 50"/>
+  <text x="482" y="140" fill="#ffffff" font-size="16" font-weight="bold" font-family="sans-serif" text-anchor="middle">12 ms</text>
+  <text x="482" y="195" fill="#10b981" font-size="10" font-family="sans-serif" text-anchor="middle">MQTT QoS 1</text>
+
+  <!-- Bottom Frequency Wave Graph -->
+  <rect x="30" y="230" width="535" height="125" rx="12" fill="#0d213b" stroke="#1e3a8a" stroke-width="1"/>
+  <text x="50" y="255" fill="#ffffff" font-size="12" font-weight="bold" font-family="sans-serif">Sensor Telemetri Frekuensi Getaran &amp; Tekanan Hidrolik</text>
+  
+  <path d="M50 305 Q 85 270, 120 305 T 190 305 T 260 305 T 330 305 T 400 305 T 470 305 T 545 305" fill="none" stroke="#0ea5e9" stroke-width="2.5"/>
+  <path d="M50 315 Q 90 335, 130 315 T 210 315 T 290 315 T 370 315 T 450 315 T 530 315" fill="none" stroke="#a855f7" stroke-width="1.8" opacity="0.8"/>
+  
+  <circle cx="260" cy="305" r="4" fill="#38bdf8"/>
+  <rect x="235" y="270" width="50" height="18" rx="4" fill="#0284c7"/>
+  <text x="260" y="282" fill="#ffffff" font-size="9" font-family="sans-serif" text-anchor="middle">0.04g peak</text>
+</svg>

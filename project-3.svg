@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="600" height="380">
+  <defs>
+    <linearGradient id="p3bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030d1e"/>
+      <stop offset="100%" stop-color="#0f223f"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="50%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" rx="16" fill="url(#p3bg)"/>
+  
+  <!-- Left Side: Mobile Phone Mockup -->
+  <rect x="50" y="40" width="180" height="300" rx="24" fill="#0b172a" stroke="#334155" stroke-width="4"/>
+  <!-- Phone Notch -->
+  <rect x="110" y="48" width="60" height="10" rx="5" fill="#1e293b"/>
+  <!-- Phone Screen Elements -->
+  <text x="75" y="80" fill="#94a3b8" font-size="10" font-family="sans-serif">Saldo Aktif</text>
+  <text x="75" y="102" fill="#ffffff" font-size="16" font-weight="bold" font-family="sans-serif">Rp 128.450.000</text>
+  <!-- Mini Virtual Card -->
+  <rect x="70" y="118" width="140" height="75" rx="10" fill="url(#cardGrad)"/>
+  <circle cx="90" cy="135" r="7" fill="#ffffff" opacity="0.8"/>
+  <circle cx="102" cy="135" r="7" fill="#f59e0b" opacity="0.8"/>
+  <text x="80" y="178" fill="#ffffff" font-size="10" font-family="monospace">•••• 8824</text>
+  <!-- Quick Actions -->
+  <circle cx="90" cy="225" r="16" fill="#1e293b"/>
+  <text x="90" y="229" fill="#38bdf8" font-size="12" font-family="sans-serif" text-anchor="middle">↑</text>
+  <text x="90" y="252" fill="#94a3b8" font-size="8" font-family="sans-serif" text-anchor="middle">Kirim</text>
+
+  <circle cx="140" cy="225" r="16" fill="#1e293b"/>
+  <text x="140" y="229" fill="#10b981" font-size="12" font-family="sans-serif" text-anchor="middle">↓</text>
+  <text x="140" y="252" fill="#94a3b8" font-size="8" font-family="sans-serif" text-anchor="middle">Terima</text>
+
+  <circle cx="190" cy="225" r="16" fill="#1e293b"/>
+  <text x="190" y="229" fill="#f59e0b" font-size="12" font-family="sans-serif" text-anchor="middle">QR</text>
+  <text x="190" y="252" fill="#94a3b8" font-size="8" font-family="sans-serif" text-anchor="middle">Bayar</text>
+
+  <!-- Recent activity in phone -->
+  <rect x="70" y="268" width="140" height="26" rx="6" fill="#1e293b"/>
+  <text x="80" y="284" fill="#ffffff" font-size="9" font-family="sans-serif">Investasi Reksadana</text>
+
+  <!-- Right Side: Analytics Dashboard -->
+  <rect x="260" y="45" width="300" height="150" rx="12" fill="#0f1f38" stroke="#1e3a8a" stroke-width="1"/>
+  <text x="280" y="75" fill="#ffffff" font-size="14" font-weight="bold" font-family="sans-serif">Cash Flow &amp; Expense Tracker</text>
+  <text x="280" y="95" fill="#94a3b8" font-size="11" font-family="sans-serif">Pengeluaran Bulan Ini: Rp 14.800.000</text>
+  
+  <!-- Donut Chart representation -->
+  <circle cx="500" cy="118" r="38" fill="none" stroke="#1e293b" stroke-width="14"/>
+  <circle cx="500" cy="118" r="38" fill="none" stroke="#38bdf8" stroke-width="14" stroke-dasharray="160 80"/>
+  <circle cx="500" cy="118" r="38" fill="none" stroke="#2563eb" stroke-width="14" stroke-dasharray="80 160" stroke-dashoffset="-80"/>
+  <circle cx="500" cy="118" r="38" fill="none" stroke="#10b981" stroke-width="14" stroke-dasharray="35 205" stroke-dashoffset="-160"/>
+  
+  <!-- Right Side: Security & Audit Card -->
+  <rect x="260" y="210" width="300" height="130" rx="12" fill="#0f1f38" stroke="#1e3a8a" stroke-width="1"/>
+  <text x="280" y="240" fill="#ffffff" font-size="14" font-weight="bold" font-family="sans-serif">Enkripsi &amp; Keamanan Transaksi</text>
+  <rect x="280" y="258" width="110" height="24" rx="6" fill="#064e3b"/>
+  <text x="335" y="274" fill="#34d399" font-size="10" font-weight="bold" font-family="sans-serif" text-anchor="middle">✓ 256-Bit SSL</text>
+  <rect x="400" y="258" width="130" height="24" rx="6" fill="#1e3a5f"/>
+  <text x="465" y="274" fill="#93c5fd" font-size="10" font-weight="bold" font-family="sans-serif" text-anchor="middle">Biometric Auth Ready</text>
+  <text x="280" y="315" fill="#64748b" font-size="10" font-family="sans-serif">High-throughput microservices handling 10k TPS</text>
+</svg>

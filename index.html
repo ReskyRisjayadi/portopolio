@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Basic SEO Meta Tags -->
+  <title>Resky Risjayadi — Informatics, Administration &amp; Field Operations</title>
+  <meta name="description"
+    content="Personal Portfolio profesional Resky Risjayadi. Berpengalaman di bidang Information Technology, Administrasi Perusahaan, Pengawasan Proyek (Field Operations), dan Logistik &amp; Inventory Control.">
+  <meta name="keywords"
+    content="Resky Risjayadi, Informatics, Administration, Field Operations, Logistics, Inventory Control, Stock Opname, Project Supervision, UMKT, Samarinda">
+  <meta name="author" content="Resky Risjayadi">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0a192f">
+
+  <!-- Open Graph Meta Tags (Facebook / LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Resky Risjayadi — Informatics, Administration &amp; Field Operations">
+  <meta property="og:description"
+    content="Bridging Technology, Administration, and Operational Excellence. Portfolio digital resmi Resky Risjayadi.">
+  <meta property="og:image" content="assets/images/favicon.svg">
+  <meta property="og:url" content="https://reskyrisjayadi.dev">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Resky Risjayadi — Portfolio Profesional">
+  <meta name="twitter:description"
+    content="Professional with experience in Information Technology, Administration, Project Supervision, and Logistics.">
+  <meta name="twitter:image" content="assets/images/favicon.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+
+  <!-- ==============================================================
+       HEADER / NAVBAR
+       ============================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <!-- Monogram Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="Beranda Resky Risjayadi">
+        <div class="brand-icon">RR</div>
+        <div class="brand-text">Resky<span> Risjayadi</span></div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#organization" class="nav-link">Organization</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Action Items (Theme Toggle & Mobile Trigger) -->
+      <div class="nav-actions">
+        <!-- Dark / Light Mode Toggle Button -->
+        <button type="button" class="btn-theme-toggle" id="themeToggle" aria-label="Ganti Tema Warna">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+
+        <!-- Quick CTA Download CV in Navbar -->
+        <button type="button" class="btn btn-outline btn-sm btn-download-cv" style="display: none;" id="navCvBtn">
+          Download CV
+        </button>
+
+        <!-- Mobile Drawer Hamburger Toggle -->
+        <button type="button" class="mobile-toggle" id="mobileToggle" aria-label="Buka Menu Navigasi"
+          aria-expanded="false">
+          <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==============================================================
+       1. PROFILE / HERO SECTION
+       ============================================================== -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <!-- Left Content Column -->
+      <div class="hero-content reveal-left">
+        <!-- Status Indicator Badge -->
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>Tersedia untuk Peluang Karir &amp; Kerja Sama Profesional</span>
+        </div>
+
+        <!-- Full Name -->
+        <h1 class="hero-name">
+          Halo, saya <span class="text-gradient">Resky Risjayadi</span>
+        </h1>
+
+        <!-- Headline -->
+        <div style="font-size: 1.15rem; font-weight: 700; color: var(--text-main); margin-top: -6px;">
+          "Bridging Technology, Administration, and Operational Excellence."
+        </div>
+
+        <!-- Profession with Animated Typing Cursor -->
+        <div class="hero-profession">
+          <span id="typedProfession">Informatics, Administration &amp; Field Operations</span>
+          <span class="typing-cursor"></span>
+        </div>
+
+        <!-- Short Professional Bio -->
+        <p class="hero-bio">
+          Professional with experience in Information Technology, Administration, Project Supervision, and Logistics. Experienced in managing operational reports, monitoring project activities, inventory control, and administrative processes.
+        </p>
+
+        <!-- Action CTA Buttons -->
+        <div class="hero-actions">
+          <button type="button" class="btn btn-primary btn-download-cv">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            Download CV
+          </button>
+          <a href="#contact" class="btn btn-outline">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+            </svg>
+            Contact Me
+          </a>
+        </div>
+
+        <!-- Social Media / Contact Icons Row -->
+        <div class="hero-socials">
+          <a href="https://wa.me/6283805560465" target="_blank" rel="noopener noreferrer" class="social-link"
+            title="Chat WhatsApp: 083805560465" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z" />
+            </svg>
+          </a>
+          <a href="mailto:Reskyr2311@gmail.com" class="social-link" title="Kirim Email ke Reskyr2311@gmail.com"
+            aria-label="Email">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/resky-risjayadi" target="_blank" rel="noopener noreferrer" class="social-link"
+            title="LinkedIn Profile" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Highlight Stats Row -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">4</span>
+            <span class="stat-label">Pengalaman Kerja</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">3.50</span>
+            <span class="stat-label">IPK Sarjana (S1)</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">Taiwan</span>
+            <span class="stat-label">Student Exchange 2021</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Visual Column (Avatar & Photo Upload Feature) -->
+      <div class="hero-visual reveal-right">
+        <div class="avatar-wrapper floating-avatar">
+          <div class="avatar-glow"></div>
+          <div class="avatar-frame">
+            <img src="assets/images/avatar-default.svg" alt="Foto Profil Resky Risjayadi" id="heroAvatarImg"
+              class="avatar-img">
+          </div>
+
+          <!-- Interactive Upload / Replace Photo Button -->
+          <button type="button" class="avatar-upload-btn" id="btnUploadAvatar"
+            title="Klik untuk mengunggah atau mengganti foto profil dari CV">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+              <circle cx="12" cy="13" r="4" />
+            </svg>
+            Ganti Foto
+          </button>
+          <input type="file" id="avatarFileInput" accept="image/*" aria-label="Upload File Foto Profil">
+
+          <!-- Floating Decorative Badges -->
+          <div class="floating-badge badge-pos-1">
+            <div class="icon-box">💻</div>
+            <div>
+              <div style="font-size: 0.72rem; color: var(--text-muted);">Academic</div>
+              <div>S1 Teknik Informatika</div>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-pos-2">
+            <div class="icon-box">📦</div>
+            <div>
+              <div style="font-size: 0.72rem; color: var(--text-muted);">Core Focus</div>
+              <div>Logistics &amp; Operations</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================================
+       2. ABOUT ME SECTION
+       ============================================================== -->
+  <section class="section section-alt" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// ABOUT ME</span>
+        <h2 class="section-title">Profil Profesional &amp; <span class="text-gradient">Latar Belakang</span></h2>
+        <p class="section-desc">Mengenal lebih dekat pengalaman multidisiplin, dedikasi kerja, etika profesional, dan kemampuan kolaborasi saya.</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Left Column: Biography & Biodata -->
+        <div class="about-card reveal-left">
+          <h3 class="about-text-lead">
+            Menghubungkan Keahlian Teknologi Informasi, Tata Kelola Administrasi, dan Eksekusi Lapangan yang Solid.
+          </h3>
+          <p class="about-text">
+            Saya adalah seorang profesional lulusan <strong>S1 Teknik Informatika (International Class)</strong> dari <strong>Universitas Muhammadiyah Kalimantan Timur</strong> yang memiliki rekam jejak pengalaman kerja nyata dalam <strong>Information Technology</strong>, <strong>Administrasi Perusahaan</strong>, <strong>Pengawasan Proyek (Project Supervision)</strong>, <strong>Operasional Lapangan (Field Operations)</strong>, serta <strong>Logistik &amp; Inventory Control</strong>.
+          </p>
+          <p class="about-text">
+            Terbiasa mengelola pelaporan operasional harian, mingguan, dan bulanan, memantau aktivitas pekerjaan galian proyek strategis (seperti proyek Tol IKN), mengawasi kepatuhan keselamatan kerja (K3 APD &amp; P2H alat berat), serta memastikan akurasi data stok pergudangan melalui stock opname berkala.
+          </p>
+          <p class="about-text">
+            Memiliki kemampuan yang teruji dalam bekerja secara mandiri maupun berkolaborasi dalam tim, komunikasi serta koordinasi lintas departemen, kepemimpinan briefing kerja, serta kecepatan adaptasi tinggi dalam mempelajari sistem dan prosedur baru di berbagai sektor industri.
+          </p>
+
+          <!-- Biodata Quick Info Grid -->
+          <div class="biodata-grid">
+            <div class="bio-item">
+              <span class="bio-label">Nama Lengkap</span>
+              <span class="bio-value">Resky Risjayadi</span>
+            </div>
+            <div class="bio-item">
+              <span class="bio-label">Lokasi / Domisili</span>
+              <span class="bio-value">Samarinda, Indonesia</span>
+            </div>
+            <div class="bio-item">
+              <span class="bio-label">Status Kerja</span>
+              <span class="bio-value" style="color: var(--color-success);">Terbuka (Open to Opportunities)</span>
+            </div>
+            <div class="bio-item">
+              <span class="bio-label">Pendidikan</span>
+              <span class="bio-value">S1 Teknik Informatika (IPK 3.50)</span>
+            </div>
+            <div class="bio-item">
+              <span class="bio-label">Nomor HP / WhatsApp</span>
+              <span class="bio-value">0838-0556-0465</span>
+            </div>
+            <div class="bio-item">
+              <span class="bio-label">Email</span>
+              <span class="bio-value">Reskyr2311@gmail.com</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Core Professional Competencies & Strengths -->
+        <div class="about-card reveal-right">
+          <div class="edu-section-title">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+            Karakter &amp; Nilai Profesional
+          </div>
+
+          <div class="character-grid">
+            <div class="character-card">
+              <div class="char-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              <div class="char-title">Mandiri &amp; Kerja Sama Tim</div>
+              <div class="char-desc">Mampu mengemban tanggung jawab secara mandiri dengan inisiatif tinggi, serta solid bekerja sama dalam tim lintas disiplin.</div>
+            </div>
+
+            <div class="character-card">
+              <div class="char-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                </svg>
+              </div>
+              <div class="char-title">Komunikasi &amp; Koordinasi</div>
+              <div class="char-desc">Terampil menjalin komunikasi efektif dengan pimpinan, operator alat berat, tim gudang, serta departemen operasional terkait.</div>
+            </div>
+
+            <div class="character-card">
+              <div class="char-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <div class="char-title">Problem Solving &amp; Analitis</div>
+              <div class="char-desc">Cermat mengidentifikasi deviasi stok, menganalisis kendala teknis lapangan, dan merumuskan solusi sesuai SOP perusahaan.</div>
+            </div>
+
+            <div class="character-card">
+              <div class="char-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+              </div>
+              <div class="char-title">Fast Learner &amp; Adaptif</div>
+              <div class="char-desc">Cepat menguasai perangkat lunak baru, alur kerja industri pertambangan, konstruksi, maupun pergudangan logistik.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================================
+       3. PROFESSIONAL EXPERIENCE SECTION
+       ============================================================== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="section-header reveal">
+        <span class="section-tag">// PROFESSIONAL EXPERIENCE</span>
+        <h2 class="section-title">Professional <span class="text-gradient">Experience</span></h2>
+        <p class="section-desc">My Career Journey &amp; Professional Background</p>
+      </div>
+
+      <!-- Experience Timeline -->
+      <div class="exp-timeline">
+        <!-- --------------------------------------------------------
+             PENGALAMAN A: PT. GRAHA PRIMA ENERGY
+             -------------------------------------------------------- -->
+        <article class="exp-node reveal">
+          <div class="exp-dot" title="PT. GRAHA PRIMA ENERGY">
+            <div class="exp-dot-inner"></div>
+          </div>
+          <div class="exp-box">
+            <div class="exp-top">
+              <div class="exp-header-main">
+                <div class="exp-icon-box exp-icon-logistics" title="Logistics &amp; Inventory">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="exp-badge-category">Logistics &amp; Inventory Control</span>
+                  <h3 class="exp-role-title">Admin Logistik</h3>
+                  <div class="exp-company-group">
+                    <div class="company-logo-badge" title="PT. Graha Prima Energy">
+                      <img src="assets/images/gpe_logo.png" alt="Logo PT. Graha Prima Energy" class="company-logo-img">
+                    </div>
+                    <span class="exp-company-name">
+                      <strong>PT. GRAHA PRIMA ENERGY</strong>
+                      <span class="exp-job-type">• Kutai Timur, Indonesia</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="exp-meta-right">
+                <span class="exp-badge-period">
+                  <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                    aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                  Mei 2025 – November 2026
+                </span>
+              </div>
+            </div>
+
+            <div class="exp-job-desc">
+              <p>
+                Bertanggung jawab penuh dalam tata kelola administrasi pergudangan logistik, pencatatan transaksi barang, verifikasi akurasi persediaan, dan pengendalian stok operasional perusahaan energi.
+              </p>
+            </div>
+
+            <div class="exp-details-section">
+              <h4 class="exp-section-title">
+                <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"
+                  aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                </svg>
+                Responsibilities
+              </h4>
+              <ul class="exp-responsibilities">
+                <li>Membuat laporan pengeluaran dan pemasukan barang harian, mingguan, dan bulanan.</li>
+                <li>Melakukan stock opname berkala.</li>
+                <li>Membuat laporan stock opname mingguan dan bulanan.</li>
+                <li>Melakukan audit briefing, picking, dan transaksi harian.</li>
+                <li>Menyiapkan barang sesuai permintaan user.</li>
+                <li>Melakukan inventory control.</li>
+              </ul>
+            </div>
+
+            <div class="exp-skills-section">
+              <h4 class="exp-section-title">
+                <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"
+                  aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+                Skills &amp; Competencies
+              </h4>
+              <div class="exp-skills-tags">
+                <span class="exp-skill-badge">Inventory Control</span>
+                <span class="exp-skill-badge">Stock Opname</span>
+                <span class="exp-skill-badge">Transaction Audit</span>
+                <span class="exp-skill-badge">Warehouse Administration</span>
+                <span class="exp-skill-badge">Picking &amp; Receiving</span>
+                <span class="exp-skill-badge">Reporting</span>
+                <span class="exp-skill-badge">Microsoft Excel</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- --------------------------------------------------------
+             PENGALAMAN B: PT. AHLIYUNANDA JAYA MINERAL
+             -------------------------------------------------------- -->
+        <article class="exp-node reveal delay-1">
+          <div class="exp-dot" title="PT. AHLIYUNANDA JAYA MINERAL">
+            <div class="exp-dot-inner"></div>
+          </div>
+          <div class="exp-box">
+            <div class="exp-top">
+              <div class="exp-header-main">
+                <div class="exp-icon-box exp-icon-operations" title="Operations &amp; Mining Supervision">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 3a7 7 0 00-7 7v3h14v-3a7 7 0 00-7-7z" />
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3 13h18a1 1 0 011 1v1a2 2 0 01-2 2H4a2 2 0 01-2-2v-1a1 1 0 011-1z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v10" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="exp-badge-category">Field Operations &amp; Administration</span>
+                  <h3 class="exp-role-title">Pelaksana dan Administrasi</h3>
+                  <div class="exp-company-group">
+                    <div class="company-logo-badge" title="PT. Ahliyunanda Jaya Mineral">
+                      <span>AJM</span>
+                    </div>
+                    <span class="exp-company-name">
+                      <strong>PT. AHLIYUNANDA JAYA MINERAL</strong>
+                      <span class="exp-job-type">• Donggala, Indonesia</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="exp-meta-right">
+                <span class="exp-badge-period">
+                  <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                    aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                  April 2023 – Januari 2025
+                </span>
+              </div>
+            </div>
+
+            <div class="exp-job-desc">
+              <p>
+                Bertanggung jawab dalam pelaporan administrasi ke kantor pusat, penyusunan laporan produksi harian pertambangan, kepatuhan SOP galian lapangan, briefing pagi, pemeriksaan harian alat berat (P2H), dan pengawasan keselamatan kerja (K3 APD).
+              </p>
+            </div>
+
+            <div class="exp-details-section">
+              <h4 class="exp-section-title">
+                <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"
+                  aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                </svg>
+                Responsibilities
+              </h4>
+              <ul class="exp-responsibilities">
+                <li>Membuat laporan administrasi perusahaan kepada pimpinan pusat untuk kebutuhan operasional.</li>
+                <li>Membuat laporan produksi harian untuk memantau pencapaian hasil produksi pertambangan.</li>
+                <li>Melakukan pengawasan pekerjaan galian sesuai SOP untuk menghindari kecelakaan kerja.</li>
+                <li>Memimpin briefing setiap pagi.</li>
+                <li>Memastikan alat berat menjalani Pemeriksaan dan Pengecekan Harian (P2H).</li>
+                <li>Memastikan karyawan menggunakan APD secara lengkap.</li>
+              </ul>
+            </div>
+
+            <div class="exp-skills-section">
+              <h4 class="exp-section-title">
+                <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"
+                  aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+                Skills &amp; Competencies
+              </h4>
+              <div class="exp-skills-tags">
+                <span class="exp-skill-badge">Field Operations</span>
+                <span class="exp-skill-badge">Administration</span>
+                <span class="exp-skill-badge">Daily Production Report</span>
+                <span class="exp-skill-badge">SOP Compliance</span>
+                <span class="exp-skill-badge">P2H Alat Berat</span>
+                <span class="exp-skill-badge">K3 &amp; APD</span>
+                <span class="exp-skill-badge">Morning Briefing</span>
+                <span class="exp-skill-badge">Operational Monitoring</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- --------------------------------------------------------
+             PENGALAMAN C: PT. ALEXANDRIA GLORY STAR
+             -------------------------------------------------------- -->
+        <article class="exp-node reveal delay-2">
+          <div class="exp-dot" title="PT. ALEXANDRIA GLORY STAR">
+            <div class="exp-dot-inner"></div>
+          </div>
+          <div class="exp-box">
+            <div class="exp-top">
+              <div class="exp-header-main">
+                <div class="exp-icon-box exp-icon-operations" title="Project Supervision">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="exp-badge-category">Infrastructure Project Supervision</span>
+                  <h3 class="exp-role-title">Pengawas Proyek</h3>
+                  <div class="exp-company-group">
+                    <div class="company-logo-badge" title="PT. Alexandria Glory Star">
+                      <span>AGS</span>
+                    </div>
+                    <span class="exp-company-name">
+                      <strong>PT. ALEXANDRIA GLORY STAR</strong>
+                      <span class="exp-job-type">• Samarinda, Indonesia</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="exp-meta-right">
+                <span class="exp-badge-period">
+                  <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                    aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                  Februari 2023 – April 2023
+                </span>
+              </div>
+            </div>
+
+            <div class="exp-job-desc">
+              <p>
+                Bertanggung jawab dalam pengawasan pelaksanaan galian badan jalan pada proyek strategis nasional Tol IKN Balikpapan – Pulau Balang, memastikan kepatuhan instruksi kerja operator alat berat, dan menyusun laporan evaluasi harian bersama Site Manager.
+              </p>
+            </div>
+
+            <div class="exp-details-section">
+              <h4 class="exp-section-title">
+                <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"
+                  aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                </svg>
+                Responsibilities
+              </h4>
+              <ul class="exp-responsibilities">
+                <li>Mengawasi proyek galian badan jalan Tol IKN Balikpapan – Pulau Balang.</li>
+                <li>Mengarahkan operator alat berat dalam melakukan pekerjaan sesuai SOP.</li>
+                <li>Membuat laporan harian kepada Site Manager.</li>
+                <li>Melakukan evaluasi harian bersama Site Manager terhadap karyawan perusahaan.</li>
+              </ul>
+            </div>
+
+            <div class="exp-skills-section">
+              <h4 class="exp-section-title">
+                <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"
+                  aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+                Skills &amp; Competencies
+              </h4>
+              <div class="exp-skills-tags">
+                <span class="exp-skill-badge">Project Supervision</span>
+                <span class="exp-skill-badge">Proyek Tol IKN</span>
+                <span class="exp-skill-badge">Heavy Equipment Direction</span>
+                <span class="exp-skill-badge">Daily Site Reporting</span>
+                <span class="exp-skill-badge">Site Manager Coordination</span>
+                <span class="exp-skill-badge">Safety SOP</span>
+                <span class="exp-skill-badge">Team Evaluation</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- --------------------------------------------------------
+             PENGALAMAN D: UNIVERSITAS MUHAMMADIYAH KALIMANTAN TIMUR
+             -------------------------------------------------------- -->
+        <article class="exp-node reveal delay-3">
+          <div class="exp-dot" title="UNIVERSITAS MUHAMMADIYAH KALIMANTAN TIMUR">
+            <div class="exp-dot-inner"></div>
+          </div>
+          <div class="exp-box">
+            <div class="exp-top">
+              <div class="exp-header-main">
+                <div class="exp-icon-box exp-icon-admin" title="Information Technology">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="exp-badge-category">Information Technology &amp; Web Development</span>
+                  <h3 class="exp-role-title">Unit IT UMKT</h3>
+                  <div class="exp-company-group">
+                    <div class="company-logo-badge" title="Universitas Muhammadiyah Kalimantan Timur">
+                      <span>UMKT</span>
+                    </div>
+                    <span class="exp-company-name">
+                      <strong>UNIVERSITAS MUHAMMADIYAH KALIMANTAN TIMUR</strong>
+                      <span class="exp-job-type">• Samarinda, Indonesia</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="exp-meta-right">
+                <span class="exp-badge-period">
+                  <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                    aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                  Oktober 2021 – Desember 2021
+                </span>
+              </div>
+            </div>
+
+            <div class="exp-job-desc">
+              <p>
+                Bertanggung jawab dalam perancangan, pengembangan, dan optimalisasi sistem website Perpustakaan Universitas Muhammadiyah Kalimantan Timur agar interaktif, ramah pengguna, dan mempermudah akses literasi sivitas akademika.
+              </p>
+            </div>
+
+            <div class="exp-details-section">
+              <h4 class="exp-section-title">
+                <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"
+                  aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                </svg>
+                Responsibilities
+              </h4>
+              <ul class="exp-responsibilities">
+                <li>Mengembangkan website Perpustakaan Universitas Muhammadiyah Kalimantan Timur.</li>
+                <li>Membuat website yang menarik dan interaktif untuk memudahkan akses pengguna.</li>
+                <li>Berkomunikasi dan bekerja sama dengan pihak kampus selama proses pengembangan.</li>
+                <li>Melakukan analisis dan pengembangan tampilan serta fitur website.</li>
+              </ul>
+            </div>
+
+            <div class="exp-skills-section">
+              <h4 class="exp-section-title">
+                <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"
+                  aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+                Skills &amp; Competencies
+              </h4>
+              <div class="exp-skills-tags">
+                <span class="exp-skill-badge">Website Development</span>
+                <span class="exp-skill-badge">CMS</span>
+                <span class="exp-skill-badge">PHP &amp; MySQL</span>
+                <span class="exp-skill-badge">HTML5 &amp; CSS3</span>
+                <span class="exp-skill-badge">JavaScript</span>
+                <span class="exp-skill-badge">UI/UX Design</span>
+                <span class="exp-skill-badge">Campus IT Collaboration</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================================
+       4. EDUCATION SECTION
+       ============================================================== -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// EDUCATION</span>
+        <h2 class="section-title">Riwayat <span class="text-gradient">Pendidikan</span></h2>
+        <p class="section-desc">Pendidikan formal akademis berstandar internasional dengan fondasi keilmuan teknologi informasi yang solid.</p>
+      </div>
+
+      <div style="max-width: 820px; margin: 0 auto;">
+        <div class="card-credential-box reveal">
+          <div class="credential-header">
+            <div style="display: flex; gap: 16px; align-items: center;">
+              <div class="credential-icon-box" title="Universitas Muhammadiyah Kalimantan Timur">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                  <path
+                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="credential-title">UNIVERSITAS MUHAMMADIYAH KALIMANTAN TIMUR</h3>
+                <div class="credential-subtitle">S1 Teknik Informatika (Bachelor of Informatics)</div>
+              </div>
+            </div>
+            <div style="text-align: right;">
+              <span class="credential-badge credential-badge-success" style="font-size: 0.9rem;">IPK 3,50 / 4.00</span>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 6px;">
+            <span class="credential-badge">International Class</span>
+            <span class="credential-badge">Periode: 2018 – 2022</span>
+            <span class="credential-badge">Lokasi: Samarinda, Indonesia</span>
+          </div>
+
+          <p class="credential-desc">
+            Menempuh pendidikan sarjana Teknik Informatika pada <strong>International Class</strong> dengan kurikulum berbasis global. Mempelajari rekayasa perangkat lunak, arsitektur basis data, pengembangan sistem berbasis web, algoritma, serta manajemen proyek teknologi informasi dengan pencapaian indeks prestasi kumulatif (IPK) 3,50.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================================
+       5. ACHIEVEMENTS SECTION
+       ============================================================== -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// ACHIEVEMENTS</span>
+        <h2 class="section-title">Prestasi &amp; <span class="text-gradient">Program Internasional</span></h2>
+        <p class="section-desc">Pencapaian akademis dan keikutsertaan dalam program pertukaran pelajar internasional.</p>
+      </div>
+
+      <div style="max-width: 820px; margin: 0 auto;">
+        <div class="card-credential-box reveal">
+          <div class="credential-header">
+            <div style="display: flex; gap: 16px; align-items: center;">
+              <div class="credential-icon-box" style="background: linear-gradient(135deg, #0a192f, #2563eb); color: #93c5fd;" title="International Achievement">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="credential-title">Student Exchange Asia University 2021</h3>
+                <div class="credential-subtitle">Penyelenggara: Asia University</div>
+              </div>
+            </div>
+            <div>
+              <span class="credential-badge" style="background: rgba(37, 99, 235, 0.15); color: var(--blue-accent);">Tahun 2021</span>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 6px;">
+            <span class="credential-badge">🌏 Lokasi: Taiwan</span>
+            <span class="credential-badge">International Exchange Program</span>
+            <span class="credential-badge">Cross-Cultural Collaboration</span>
+          </div>
+
+          <p class="credential-desc">
+            Terpilih sebagai perwakilan mahasiswa dalam program <strong>Student Exchange di Asia University, Taiwan</strong> pada tahun 2021. Mengikuti perkuliahan dan interaksi ilmiah internasional yang memperkuat kemampuan komunikasi lintas budaya, wawasan teknologi global, serta kepemimpinan adaptif.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================================
+       6. ORGANIZATIONAL EXPERIENCE SECTION
+       ============================================================== -->
+  <section class="section section-alt" id="organization">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// ORGANIZATIONAL EXPERIENCE</span>
+        <h2 class="section-title">Pengalaman <span class="text-gradient">Organisasi</span></h2>
+        <p class="section-desc">Rekam jejak kepemimpinan, kontribusi tim, dan pengelolaan media informasi di lingkungan kampus.</p>
+      </div>
+
+      <div style="max-width: 820px; margin: 0 auto;">
+        <div class="card-credential-box reveal">
+          <div class="credential-header">
+            <div style="display: flex; gap: 16px; align-items: center;">
+              <div class="credential-icon-box" title="BEM UMKT">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="credential-title">Badan Eksekutif Mahasiswa (BEM)</h3>
+                <div class="credential-subtitle">Universitas Muhammadiyah Kalimantan Timur</div>
+              </div>
+            </div>
+            <div>
+              <span class="credential-badge">Aktivisme Mahasiswa</span>
+            </div>
+          </div>
+
+          <div class="org-timeline">
+            <!-- Posisi 1 -->
+            <div class="org-node">
+              <div class="org-dot"></div>
+              <h4 class="org-role-title">Kepala Biro Media Kreatif dan Informasi</h4>
+              <span class="org-period-badge">Periode: 2021 – 2022</span>
+              <p class="org-role-desc">
+                Memimpin biro dalam perancangan strategi komunikasi publik organisasi BEM UMKT, memproduksi konten visual dan publikasi digital, mengelola akun media sosial resmi, serta memimpin tim kreatif dalam mendiseminasikan agenda dan aspirasi mahasiswa secara profesional.
+              </p>
+            </div>
+
+            <!-- Posisi 2 -->
+            <div class="org-node">
+              <div class="org-dot"></div>
+              <h4 class="org-role-title">Staff Kementerian Komunikasi dan Informasi</h4>
+              <span class="org-period-badge">Periode: 2018 – 2020</span>
+              <p class="org-role-desc">
+                Bertanggung jawab dalam peliputan dan dokumentasi kegiatan organisasi, penyusunan siaran pers dan rilis informasi kampus, serta mendukung koordinasi publikasi antar kementerian di internal BEM UMKT.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================================
+       7. SKILLS & COMPETENCIES SECTION
+       ============================================================== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// SKILLS &amp; COMPETENCIES</span>
+        <h2 class="section-title">Keahlian &amp; <span class="text-gradient">Kompetensi</span></h2>
+        <p class="section-desc">Kombinasi keahlian teknis pemrograman, keahlian administrasi &amp; operasional profesional, serta soft skills kepemimpinan.</p>
+      </div>
+
+      <div class="skills-three-col">
+        <!-- 1. Technical Skills -->
+        <div class="skill-category-box reveal delay-1">
+          <div class="skill-box-header">
+            <div class="skill-box-icon" title="Technical Skills">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="skill-box-title">Technical Skills</h3>
+              <div class="skill-box-desc">Pemrograman, Web &amp; Software</div>
+            </div>
+          </div>
+
+          <div class="skill-pill-list">
+            <span class="skill-pill-badge">Website Development</span>
+            <span class="skill-pill-badge">CMS</span>
+            <span class="skill-pill-badge">Laravel</span>
+            <span class="skill-pill-badge">MySQL</span>
+            <span class="skill-pill-badge">PHP</span>
+            <span class="skill-pill-badge">CSS</span>
+            <span class="skill-pill-badge">HTML</span>
+            <span class="skill-pill-badge">JavaScript</span>
+            <span class="skill-pill-badge">Microsoft Office 365</span>
+            <span class="skill-pill-badge">Excel (Advanced)</span>
+            <span class="skill-pill-badge">Word</span>
+            <span class="skill-pill-badge">PowerPoint</span>
+            <span class="skill-pill-badge">Outlook</span>
+          </div>
+        </div>
+
+        <!-- 2. Professional Skills -->
+        <div class="skill-category-box reveal delay-2">
+          <div class="skill-box-header">
+            <div class="skill-box-icon" title="Professional Skills">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="skill-box-title">Professional Skills</h3>
+              <div class="skill-box-desc">Administrasi, Lapangan &amp; Logistik</div>
+            </div>
+          </div>
+
+          <div class="skill-pill-list">
+            <span class="skill-pill-badge">Administration</span>
+            <span class="skill-pill-badge">Inventory Control</span>
+            <span class="skill-pill-badge">Stock Opname</span>
+            <span class="skill-pill-badge">Operational Monitoring</span>
+            <span class="skill-pill-badge">Project Supervision</span>
+            <span class="skill-pill-badge">Reporting (Harian/Mingguan/Bulanan)</span>
+            <span class="skill-pill-badge">P2H Alat Berat</span>
+            <span class="skill-pill-badge">K3 &amp; APD Compliance</span>
+            <span class="skill-pill-badge">Morning Briefing Leadership</span>
+            <span class="skill-pill-badge">Audit &amp; Picking Transaksi</span>
+          </div>
+        </div>
+
+        <!-- 3. Soft Skills -->
+        <div class="skill-category-box reveal delay-3">
+          <div class="skill-box-header">
+            <div class="skill-box-icon" title="Soft Skills">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="skill-box-title">Soft Skills</h3>
+              <div class="skill-box-desc">Karakter &amp; Kolaborasi Kerja</div>
+            </div>
+          </div>
+
+          <div class="skill-pill-list">
+            <span class="skill-pill-badge">Communication</span>
+            <span class="skill-pill-badge">Teamwork</span>
+            <span class="skill-pill-badge">Problem Solving</span>
+            <span class="skill-pill-badge">Leadership</span>
+            <span class="skill-pill-badge">Bekerja Mandiri</span>
+            <span class="skill-pill-badge">Koordinasi Lintas Divisi</span>
+            <span class="skill-pill-badge">Fast Learner</span>
+            <span class="skill-pill-badge">Disiplin &amp; Tanggung Jawab</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================================
+       8. CONTACT SECTION
+       ============================================================== -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// CONTACT</span>
+        <h2 class="section-title">Informasi Kontak &amp; <span class="text-gradient">Hubungi Saya</span></h2>
+        <p class="section-desc">Tertarik untuk mendiskusikan peluang karir, posisi pekerjaan, atau kolaborasi profesional? Jangan ragu untuk menghubungi saya melalui kontak di bawah ini.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Left: Contact Channels -->
+        <div class="contact-info-list reveal-left">
+          <!-- WhatsApp Card -->
+          <div class="contact-card-item">
+            <div class="contact-card-main">
+              <div class="contact-icon-box" style="background: rgba(37, 211, 102, 0.12); color: #25d366;">
+                <svg fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-label">Nomor HP / WhatsApp</div>
+                <div class="contact-val">083805560465</div>
+              </div>
+            </div>
+            <a href="https://wa.me/6283805560465" target="_blank" rel="noopener noreferrer" class="btn-copy"
+              style="color: #25d366; text-decoration: none;">
+              Chat WhatsApp
+            </a>
+          </div>
+
+          <!-- Email Card -->
+          <div class="contact-card-item">
+            <div class="contact-card-main">
+              <div class="contact-icon-box">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-label">Email Profesional</div>
+                <div class="contact-val">Reskyr2311@gmail.com</div>
+              </div>
+            </div>
+            <button type="button" class="btn-copy" data-copy="Reskyr2311@gmail.com" title="Salin Email">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+              </svg>
+              Salin
+            </button>
+          </div>
+
+          <!-- Location Card -->
+          <div class="contact-card-item">
+            <div class="contact-card-main">
+              <div class="contact-icon-box">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-label">Lokasi Domisili</div>
+                <div class="contact-val">Samarinda, Indonesia</div>
+              </div>
+            </div>
+            <span class="btn-copy" style="cursor: default; background: var(--bg-tag); color: var(--blue-accent);">WITA (UTC+8)</span>
+          </div>
+
+          <!-- LinkedIn Card -->
+          <div class="contact-card-item">
+            <div class="contact-card-main">
+              <div class="contact-icon-box">
+                <svg fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-label">LinkedIn</div>
+                <div class="contact-val">linkedin.com/in/resky-risjayadi</div>
+              </div>
+            </div>
+            <a href="https://linkedin.com/in/resky-risjayadi" target="_blank" rel="noopener noreferrer" class="btn-copy"
+              style="text-decoration: none;">
+              Buka
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Interactive Validated Contact Form -->
+        <div class="contact-form-wrapper reveal-right">
+          <h3 class="form-title">Kirimkan Pesan Anda</h3>
+          <p class="form-subtitle">Formulir tervalidasi langsung. Pesan Anda juga dapat langsung diteruskan ke WhatsApp.</p>
+
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <!-- Name Input -->
+              <div class="form-group">
+                <label for="senderName" class="form-label">
+                  Nama Lengkap <span class="required">*</span>
+                </label>
+                <input type="text" id="senderName" class="form-input" placeholder="Contoh: HRD PT..." required>
+                <div class="form-error-msg">Nama lengkap wajib diisi</div>
+              </div>
+
+              <!-- Email Input -->
+              <div class="form-group">
+                <label for="senderEmail" class="form-label">
+                  Alamat Email <span class="required">*</span>
+                </label>
+                <input type="email" id="senderEmail" class="form-input" placeholder="recruiter@perusahaan.com" required>
+                <div class="form-error-msg">Format email tidak valid</div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <!-- Phone / WhatsApp Input -->
+              <div class="form-group">
+                <label for="senderPhone" class="form-label">
+                  Nomor WhatsApp / Telp <span class="required">*</span>
+                </label>
+                <input type="tel" id="senderPhone" class="form-input" placeholder="Contoh: 081234567890" required>
+                <div class="form-error-msg">Nomor telepon minimal 9 digit angka</div>
+              </div>
+
+              <!-- Subject Input -->
+              <div class="form-group">
+                <label for="messageSubject" class="form-label">
+                  Subjek Keperluan <span class="required">*</span>
+                </label>
+                <select id="messageSubject" class="form-select" required>
+                  <option value="" disabled selected>Pilih subjek pesan...</option>
+                  <option value="Tawaran Pekerjaan (Job Offer / Rekrutmen)">Tawaran Pekerjaan (Job Offer / Rekrutmen)</option>
+                  <option value="Peluang Administrasi & Logistik">Peluang Administrasi &amp; Logistik</option>
+                  <option value="Peluang Field Operations & Pengawasan">Peluang Field Operations &amp; Pengawasan</option>
+                  <option value="Proyek IT / Website Development">Proyek IT / Website Development</option>
+                  <option value="Diskusi Kolaborasi Lainnya">Diskusi Kolaborasi Lainnya</option>
+                </select>
+                <div class="form-error-msg">Silakan pilih subjek keperluan</div>
+              </div>
+            </div>
+
+            <!-- Message Textarea -->
+            <div class="form-group">
+              <label for="messageContent" class="form-label">
+                <span>Isi Pesan / Penawaran <span class="required">*</span></span>
+                <span class="char-counter" id="messageCharCount">0 / 500 karakter</span>
+              </label>
+              <textarea id="messageContent" class="form-textarea"
+                placeholder="Tuliskan pesan, rincian tawaran karir, atau pertanyaan Anda di sini..."
+                maxlength="500" required></textarea>
+              <div class="form-error-msg">Isi pesan minimal harus 10 karakter</div>
+            </div>
+
+            <!-- Form Actions -->
+            <div class="form-footer">
+              <button type="button" class="btn btn-outline btn-sm" id="btnResetForm">
+                Reset Formulir
+              </button>
+              <button type="submit" class="btn btn-primary">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                </svg>
+                Kirim Pesan
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================================
+       FOOTER
+       ============================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+            <div class="brand-icon" style="width: 34px; height: 34px; font-size: 0.95rem;">RR</div>
+            <h3 style="margin-bottom: 0;">Resky Risjayadi</h3>
+          </div>
+          <p>
+            Professional with experience in Information Technology, Administration, Project Supervision, and Logistics. Berkomitmen menjaga akurasi pelaporan, koordinasi tim yang solid, dan integritas kerja operasional.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigasi Cepat</h4>
+          <div class="footer-links">
+            <a href="#home" class="footer-link">Home</a>
+            <a href="#about" class="footer-link">About Me</a>
+            <a href="#experience" class="footer-link">Professional Experience</a>
+            <a href="#education" class="footer-link">Education (UMKT)</a>
+            <a href="#achievements" class="footer-link">Achievements (Taiwan)</a>
+            <a href="#organization" class="footer-link">Organizational Experience</a>
+            <a href="#skills" class="footer-link">Skills &amp; Competencies</a>
+            <a href="#contact" class="footer-link">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Dokumen &amp; Kontak</h4>
+          <div class="footer-links">
+            <a href="#" class="footer-link btn-download-cv">Unduh Berkas CV (PDF)</a>
+            <a href="cv-print.html" target="_blank" class="footer-link">Tampilan ATS Printable CV</a>
+            <a href="https://wa.me/6283805560465" target="_blank" rel="noopener noreferrer" class="footer-link">WhatsApp: 083805560465</a>
+            <a href="mailto:Reskyr2311@gmail.com" class="footer-link">Email: Reskyr2311@gmail.com</a>
+            <a href="javascript:void(0)" onclick="resetAvatarToDefault()" class="footer-link"
+              style="color: #64748b; font-size: 0.8rem; margin-top: 8px;">Reset Foto Profil Default</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Resky Risjayadi. Hak cipta dilindungi undang-undang.
+        </div>
+        <div style="color: #64748b;">
+          Portfolio Personal Digital • Samarinda, Indonesia.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==============================================================
+       FLOATING CONTROLS (WHATSAPP & BACK TO TOP)
+       ============================================================== -->
+  <div class="floating-actions">
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6283805560465" target="_blank" rel="noopener noreferrer" class="btn-float btn-whatsapp-float" aria-label="Hubungi via WhatsApp">
+      <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
+        <path
+          d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z" />
+      </svg>
+      <span class="float-tooltip">Chat WhatsApp: 083805560465</span>
+    </a>
+
+    <!-- Floating Back to Top Button -->
+    <button type="button" class="btn-float btn-back-to-top" id="backToTopBtn"
+      aria-label="Kembali ke Bagian Atas Halaman">
+      <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- ==============================================================
+       MODALS (CV DOWNLOAD CHOICE)
+       ============================================================== -->
+  <div class="modal-backdrop" id="cvModal" role="dialog" aria-modal="true" aria-labelledby="cvModalTitle">
+    <div class="modal-window" style="max-width: 520px;">
+      <div class="modal-header">
+        <h3 class="modal-title" id="cvModalTitle" style="display: flex; align-items: center; gap: 8px;">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          Pilih Opsi Download CV
+        </h3>
+        <button type="button" class="modal-close-btn" onclick="closeCvModal()" aria-label="Tutup Modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.6; margin-bottom: 20px;">
+          Curriculum Vitae Resky Risjayadi telah disusun secara profesional, ringkas, dan ATS-friendly agar mudah dievaluasi oleh Tim HRD &amp; Recruiter.
+        </p>
+
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <!-- Choice 1: Direct PDF File Download -->
+          <button type="button" class="btn btn-primary" onclick="downloadCvPdf()"
+            style="justify-content: flex-start; padding: 14px 20px;">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            <div style="text-align: left;">
+              <div style="font-weight: 700; font-size: 0.95rem;">Unduh Berkas PDF Resmi Langsung</div>
+              <div style="font-size: 0.78rem; opacity: 0.85; font-weight: normal;">Format dokumen: CV_Resky_Risjayadi.pdf</div>
+            </div>
+          </button>
+
+          <!-- Choice 2: Open Printable ATS Layout -->
+          <button type="button" class="btn btn-outline" onclick="openPrintableCv()"
+            style="justify-content: flex-start; padding: 14px 20px;">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+            </svg>
+            <div style="text-align: left;">
+              <div style="font-weight: 700; font-size: 0.95rem;">Buka Tampilan Lembar CV Cetak (ATS-Ready)</div>
+              <div style="font-size: 0.78rem; color: var(--text-muted); font-weight: normal;">Pratinjau cetak browser / Simpan ke PDF ukuran A4</div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/profile-handler.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae - Resky Risjayadi</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0a192f;
+      --secondary: #1e3a8a;
+      --accent: #0284c7;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --bg: #ffffff;
+      --badge-bg: #f1f5f9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--text);
+      background-color: #f8fafc;
+      line-height: 1.5;
+      font-size: 13px;
+      padding: 24px 16px;
+    }
+
+    /* Print Controls Floating Bar */
+    .print-bar {
+      max-width: 820px;
+      margin: 0 auto 16px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      padding: 12px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      border: 1px solid var(--border);
+    }
+
+    .print-bar h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      padding: 8px 16px;
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: none;
+      transition: all 0.2s;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #ffffff;
+    }
+
+    .btn-primary:hover {
+      background: #0369a1;
+    }
+
+    .btn-outline {
+      background: #ffffff;
+      color: var(--primary);
+      border: 1px solid var(--border);
+    }
+
+    .btn-outline:hover {
+      background: #f1f5f9;
+    }
+
+    /* CV Container */
+    .cv-wrapper {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--bg);
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(10, 25, 47, 0.08);
+      border: 1px solid var(--border);
+      padding: 38px;
+    }
+
+    /* Header */
+    .cv-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      gap: 20px;
+    }
+
+    .cv-name {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--primary);
+      letter-spacing: -0.5px;
+      margin-bottom: 4px;
+    }
+
+    .cv-title {
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .cv-contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      font-size: 12.5px;
+      color: var(--text-muted);
+    }
+
+    .cv-contact span {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    /* Section Styles */
+    .section-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 5px;
+      margin: 18px 0 10px 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title::before {
+      content: "";
+      width: 4px;
+      height: 14px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    .summary-text {
+      color: #334155;
+      line-height: 1.6;
+      text-align: justify;
+      font-size: 12.8px;
+    }
+
+    /* Experience Items */
+    .exp-item {
+      margin-bottom: 14px;
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 3px;
+    }
+
+    .exp-role {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .exp-company {
+      color: var(--secondary);
+      font-weight: 600;
+    }
+
+    .exp-loc {
+      font-size: 11.5px;
+      color: var(--text-muted);
+    }
+
+    .exp-date {
+      font-size: 11.8px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .exp-desc {
+      list-style-type: disc;
+      padding-left: 18px;
+      color: #334155;
+      font-size: 12.4px;
+      line-height: 1.5;
+      margin-top: 4px;
+    }
+
+    .exp-desc li {
+      margin-bottom: 2px;
+    }
+
+    /* Education & Achievements & Org */
+    .edu-item, .org-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 8px;
+    }
+
+    .edu-name, .org-name {
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 13px;
+    }
+
+    .edu-degree, .org-role {
+      color: var(--text-muted);
+      font-size: 12.2px;
+    }
+
+    .edu-score {
+      font-weight: 600;
+      color: var(--accent);
+      font-size: 12px;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 8px;
+    }
+
+    .skill-category h4 {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--secondary);
+      margin-bottom: 6px;
+    }
+
+    .badge-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .badge {
+      background: var(--badge-bg);
+      color: var(--primary);
+      padding: 2.5px 7px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 500;
+      border: 1px solid #e2e8f0;
+    }
+
+    /* Print media styling */
+    @media print {
+      body {
+        background: transparent;
+        padding: 0;
+        margin: 0;
+      }
+
+      .print-bar {
+        display: none !important;
+      }
+
+      .cv-wrapper {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+      }
+
+      @page {
+        margin: 12mm;
+        size: A4 portrait;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top Action Bar (Hidden on Print) -->
+  <div class="print-bar">
+    <div>
+      <h3>Dokumen Curriculum Vitae (ATS-Friendly)</h3>
+      <p style="font-size: 12px; color: #64748b;">Resky Risjayadi — Informatics, Administration &amp; Field Operations</p>
+    </div>
+    <div class="btn-group">
+      <button class="btn btn-primary" onclick="window.print()">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z">
+          </path>
+        </svg>
+        Cetak / Simpan PDF
+      </button>
+      <a href="index.html" class="btn btn-outline">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+        </svg>
+        Kembali ke Portofolio
+      </a>
+    </div>
+  </div>
+
+  <!-- Main CV Sheet -->
+  <div class="cv-wrapper">
+    <!-- Header -->
+    <header class="cv-header">
+      <div>
+        <h1 class="cv-name">Resky Risjayadi</h1>
+        <div class="cv-title">Informatics, Administration &amp; Field Operations</div>
+        <div class="cv-contact">
+          <span>📍 Samarinda, Indonesia</span>
+          <span>📞 +62 838-0556-0465</span>
+          <span>✉️ Reskyr2311@gmail.com</span>
+          <span>🌐 linkedin.com/in/resky-risjayadi</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section>
+      <h2 class="section-title">Professional Summary</h2>
+      <p class="summary-text">
+        Professional with experience in Information Technology, Administration, Project Supervision, and Logistics. Experienced in managing operational reports, monitoring project activities, inventory control, and administrative processes. Possesses strong ability to work independently or within a team, excellent cross-functional communication and coordination, and high adaptability to master new technologies and operational procedures rapidly.
+      </p>
+    </section>
+
+    <!-- Professional Experience -->
+    <section>
+      <h2 class="section-title">Professional Experience</h2>
+
+      <!-- Experience 1 -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <span class="exp-role">Admin Logistik</span> — <span class="exp-company">PT. GRAHA PRIMA ENERGY</span>
+            <span class="exp-loc">• Kutai Timur, Indonesia</span>
+          </div>
+          <span class="exp-date">Mei 2025 – November 2026</span>
+        </div>
+        <ul class="exp-desc">
+          <li>Membuat laporan pengeluaran dan pemasukan barang harian, mingguan, dan bulanan secara akurat.</li>
+          <li>Melakukan stock opname berkala guna memastikan kesesuaian fisik stok dengan sistem.</li>
+          <li>Membuat laporan stock opname mingguan dan bulanan untuk monitoring manajemen logistik.</li>
+          <li>Melakukan audit briefing, picking, dan transaksi harian gudang.</li>
+          <li>Menyiapkan barang sesuai dengan permintaan user dan kebutuhan operasional.</li>
+          <li>Melakukan inventory control dan pengendalian ketersediaan suku cadang/material.</li>
+        </ul>
+      </div>
+
+      <!-- Experience 2 -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <span class="exp-role">Pelaksana dan Administrasi</span> — <span class="exp-company">PT. AHLIYUNANDA JAYA MINERAL</span>
+            <span class="exp-loc">• Donggala, Indonesia</span>
+          </div>
+          <span class="exp-date">April 2023 – Januari 2025</span>
+        </div>
+        <ul class="exp-desc">
+          <li>Membuat laporan administrasi perusahaan kepada pimpinan pusat untuk kebutuhan operasional.</li>
+          <li>Membuat laporan produksi harian untuk memantau pencapaian hasil produksi pertambangan.</li>
+          <li>Melakukan pengawasan pekerjaan galian sesuai SOP untuk menghindari kecelakaan kerja.</li>
+          <li>Memimpin briefing setiap pagi untuk koordinasi keselamatan dan target kerja.</li>
+          <li>Memastikan alat berat menjalani Pemeriksaan dan Pengecekan Harian (P2H).</li>
+          <li>Memastikan seluruh karyawan menggunakan Alat Pelindung Diri (APD) secara lengkap.</li>
+        </ul>
+      </div>
+
+      <!-- Experience 3 -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <span class="exp-role">Pengawas Proyek</span> — <span class="exp-company">PT. ALEXANDRIA GLORY STAR</span>
+            <span class="exp-loc">• Samarinda, Indonesia</span>
+          </div>
+          <span class="exp-date">Februari 2023 – April 2023</span>
+        </div>
+        <ul class="exp-desc">
+          <li>Mengawasi proyek galian badan jalan Tol IKN Balikpapan – Pulau Balang.</li>
+          <li>Mengarahkan operator alat berat dalam melakukan pekerjaan galian dan timbunan sesuai SOP.</li>
+          <li>Membuat laporan progres harian pekerjaan kepada Site Manager.</li>
+          <li>Melakukan evaluasi harian bersama Site Manager terhadap performa kerja karyawan perusahaan.</li>
+        </ul>
+      </div>
+
+      <!-- Experience 4 -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <span class="exp-role">Unit IT UMKT</span> — <span class="exp-company">UNIVERSITAS MUHAMMADIYAH KALIMANTAN TIMUR</span>
+            <span class="exp-loc">• Samarinda, Indonesia</span>
+          </div>
+          <span class="exp-date">Oktober 2021 – Desember 2021</span>
+        </div>
+        <ul class="exp-desc">
+          <li>Mengembangkan website Perpustakaan Universitas Muhammadiyah Kalimantan Timur.</li>
+          <li>Membuat website yang menarik dan interaktif untuk memudahkan akses dan pencarian buku pengguna.</li>
+          <li>Berkomunikasi dan bekerja sama dengan pihak kampus dan staf perpustakaan selama proses pengembangan.</li>
+          <li>Melakukan analisis dan pengembangan tampilan antarmuka (UI) serta fitur website.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2 class="section-title">Education</h2>
+      <div class="edu-item">
+        <div>
+          <div class="edu-name">Universitas Muhammadiyah Kalimantan Timur (UMKT)</div>
+          <div class="edu-degree">S1 Teknik Informatika (Bachelor of Informatics) — <strong>International Class</strong></div>
+        </div>
+        <div style="text-align: right;">
+          <div class="exp-date">2018 – 2022</div>
+          <div class="edu-score">IPK: 3.50 / 4.00</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section>
+      <h2 class="section-title">Achievements</h2>
+      <div class="edu-item">
+        <div>
+          <div class="edu-name">Student Exchange Asia University 2021</div>
+          <div class="edu-degree">Penyelenggara: Asia University • Lokasi: Taiwan</div>
+        </div>
+        <div style="text-align: right;">
+          <div class="exp-date">2021</div>
+          <div class="edu-score">Program Internasional</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Organizational Experience -->
+    <section>
+      <h2 class="section-title">Organizational Experience</h2>
+      <div class="org-item">
+        <div>
+          <div class="org-name">Badan Eksekutif Mahasiswa (BEM) UMKT</div>
+          <div class="org-role">Kepala Biro Media Kreatif dan Informasi</div>
+        </div>
+        <div class="exp-date">2021 – 2022</div>
+      </div>
+      <div class="org-item">
+        <div>
+          <div class="org-name">Badan Eksekutif Mahasiswa (BEM) UMKT</div>
+          <div class="org-role">Staff Kementerian Komunikasi dan Informasi</div>
+        </div>
+        <div class="exp-date">2018 – 2020</div>
+      </div>
+    </section>
+
+    <!-- Skills & Competencies -->
+    <section>
+      <h2 class="section-title">Skills &amp; Competencies</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h4>Technical Skills</h4>
+          <div class="badge-list">
+            <span class="badge">Website Development</span>
+            <span class="badge">CMS</span>
+            <span class="badge">Laravel</span>
+            <span class="badge">MySQL</span>
+            <span class="badge">PHP</span>
+            <span class="badge">CSS</span>
+            <span class="badge">HTML</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">Microsoft Office 365</span>
+            <span class="badge">Excel, Word, PPT, Outlook</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Professional Skills</h4>
+          <div class="badge-list">
+            <span class="badge">Administration</span>
+            <span class="badge">Inventory Control</span>
+            <span class="badge">Stock Opname</span>
+            <span class="badge">Operational Monitoring</span>
+            <span class="badge">Project Supervision</span>
+            <span class="badge">Reporting</span>
+            <span class="badge">P2H &amp; K3 APD</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Soft Skills</h4>
+          <div class="badge-list">
+            <span class="badge">Communication</span>
+            <span class="badge">Teamwork</span>
+            <span class="badge">Problem Solving</span>
+            <span class="badge">Leadership</span>
+            <span class="badge">Analytical Thinking</span>
+            <span class="badge">Fast Learner</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
